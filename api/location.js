@@ -19,7 +19,6 @@ export default async function handler(req, res) {
       longitude: data.longitude,
       city: data.city,
       country: data.country_name,
-       source: "ip",
     });
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch location" });
